@@ -44,41 +44,46 @@
     </div>
   </header>
 
-  <!-- Projects Section (Coming Soon Grid) -->
+  <!-- Active Projects Section -->
   <section class="section" id="projects">
     <div class="section-header">
-      <p class="section-tag">Current Pipeline</p>
-      <h2 class="section-title">Projects In Progress</h2>
+      <p class="section-tag">Live & Deployed</p>
+      <h2 class="section-title">Active Projects</h2>
     </div>
 
-    <div class="projects-grid">
-      <!-- Project 1: AI Portfolio Generator -->
+    <div class="projects-grid active-projects-grid">
+      <!-- Project 1: Attendance tracker -->
       <article class="project-card">
-        <div class="project-card-placeholder">
-          <div class="placeholder-icon-wrapper">
-            <svg class="placeholder-icon" viewBox="0 0 24 24">
-              <path d="M12 2v4M12 18v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M2 12h4M18 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" />
-              <circle cx="12" cy="12" r="3" />
-            </svg>
-          </div>
-          <span class="placeholder-status-badge">
+        <div class="project-card-image">
+          <img src="assets/omniattend.png" alt="OmniAttend Attendance Tracker">
+          <span class="project-status-badge">
             <span class="dot"></span>
-            Coming Soon
+            Active
           </span>
         </div>
         <div class="project-card-body">
-          <h3 class="project-title">AI Portfolio Generator</h3>
-          <p class="project-description">An autonomous engine that builds customized, pitch-black minimalist developer portfolios tailored to user skills and project specs.</p>
+          <h3 class="project-title">OmniAttend</h3>
+          <p class="project-description">OmniAttend is a modern, responsive multi-user attendance tracking and academic regulator web application. It features dynamic Day-Wise vs. Hour-Wise attendance calculations, AI-powered routine ingestion using Google Gemini, interactive timetables, and audit logging.</p>
           <div class="project-footer">
             <span class="project-tech-tag">HTML5 / Vanilla CSS / AI</span>
-            <a href="#" class="project-link" onclick="event.preventDefault(); alert('Project coming soon!');">
+            <a href="https://itspratikbiswas.github.io/attendance-tracker/" class="project-link" target="_blank" rel="noopener noreferrer">
               View Live Site
               <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
             </a>
           </div>
         </div>
       </article>
+    </div>
+  </section>
 
+  <!-- Development Pipeline Section -->
+  <section class="section" id="pipeline">
+    <div class="section-header">
+      <p class="section-tag">Current Pipeline</p>
+      <h2 class="section-title">Upcoming Projects</h2>
+    </div>
+
+    <div class="projects-grid">
       <!-- Project 2: Personal Knowledge Base -->
       <article class="project-card">
         <div class="project-card-placeholder">
@@ -239,16 +244,20 @@
       
       <div class="social-links">
         <!-- Email Icon -->
-        <a href="mailto:contact@example.com" class="social-icon-btn" title="Email Me">
-          <svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+        <a href="mailto:biswaspratik14@gmail.com" class="social-icon-btn" title="Email Me">
+          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V8.38l8 5 8-5V17c0 .55-.45 1-1 1zm-7-6.25L4.57 7h14.86L12 11.75z"/></svg>
         </a>
         <!-- GitHub Icon -->
-        <a href="https://github.com" target="_blank" class="social-icon-btn" title="GitHub">
+        <a href="https://github.com/itspratikbiswas" target="_blank" class="social-icon-btn" title="GitHub">
           <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
         </a>
         <!-- LinkedIn Icon -->
-        <a href="https://linkedin.com" target="_blank" class="social-icon-btn" title="LinkedIn">
+        <a href="https://www.linkedin.com/in/pratik-biswas-b529922b6/" target="_blank" class="social-icon-btn" title="LinkedIn">
           <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+        </a>
+        <!-- Instagram Icon -->
+        <a href="https://instagram.com/its.pratik.biswas" target="_blank" class="social-icon-btn" title="Instagram">
+          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
         </a>
       </div>
 
