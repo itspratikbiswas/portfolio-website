@@ -283,6 +283,11 @@ a {
   gap: 2rem;
 }
 
+.active-projects-grid {
+  grid-template-columns: minmax(280px, 450px);
+  justify-content: center;
+}
+
 .project-card {
   background-color: var(--bg-card);
   border: 1px solid var(--border-subtle);
