@@ -5,265 +5,560 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Pratik's Portfolio - AI-Driven Developer & Frontend Innovator. Explore projects in progress, bio, and creative work.">
   <title>Pratik | AI-Driven Developer & Portfolio</title>
-  <!--Robot Favicon-->
+  
+  <!-- Robot Favicon -->
   <link rel="icon" type="image/png" href="assets/image.png">
+
+  <!-- Atelier Monolith Typography & Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&display=swap" rel="stylesheet">
 
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
   <!-- Navigation -->
-  <nav class="navbar" id="navbar">
-    <a href="#" class="logo">PRATIK<span>.</span></a>
-    <ul class="nav-links">
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#about">About</a></li>
-      <li><a href="#gallery">Lifestyle</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-
-  <!-- Hero Section -->
-  <header class="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <div class="hero-badge">
-        <span class="pulse-dot"></span>
-        <span>Building Next-Gen Web & AI Tools</span>
-      </div>
-      <h1 class="hero-title">Crafting Digital Products with <span class="highlight">Intelligence & Elegance</span></h1>
-      <p class="hero-subtitle">Welcome to my personal workspace. I specialize in HTML5, CSS design systems, and AI-driven development. Take a look at the projects currently in development below.</p>
-      <div class="hero-actions">
-        <a href="#projects" class="btn-primary">
-          Explore Projects
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+  <header class="navbar" id="navbar">
+    <div class="navbar-inner">
+      <div class="nav-brand-group">
+        <a href="#" class="logo">
+          <span class="logo-slash">//</span>
+          <span class="logo-title">PRATIK.DEV</span>
+          <span class="logo-role">/ PORTFOLIO</span>
         </a>
-        <a href="#about" class="btn-secondary">About My Journey</a>
+        <div class="nav-status-badge">
+          <span class="status-dot-pulse">
+            <span class="ping"></span>
+            <span class="core"></span>
+          </span>
+          <span>AVAILABLE FOR Q2/Q3</span>
+        </div>
+      </div>
+
+      <div class="nav-right-group">
+        <nav class="nav-links">
+          <li><a href="#projects">01 // Projects</a></li>
+          <li><a href="#pipeline">02 // Pipeline</a></li>
+          <li><a href="#about">03 // About</a></li>
+          <li><a href="#gallery">04 // Lifestyle</a></li>
+          <li><a href="#contact">05 // Contact</a></li>
+        </nav>
+        <div class="nav-user-avatar" title="Pratik">
+          <img src="assets/pfp1.jpg" alt="Pratik Profile">
+        </div>
       </div>
     </div>
   </header>
 
-  <!-- Active Projects Section -->
-  <section class="section" id="projects">
-    <div class="section-header">
-      <p class="section-tag">Live & Deployed</p>
-      <h2 class="section-title">Active Projects</h2>
-    </div>
+  <!-- Hero Section -->
+  <main>
+    <section class="hero">
+      <!-- Ambient Glow Field (Glacier Light Effect) -->
+      <div class="hero-glow-field"></div>
+      <div class="hero-glow-secondary"></div>
 
-    <div class="projects-grid active-projects-grid">
-      <!-- Project 1: Attendance tracker -->
-      <article class="project-card">
-        <div class="project-card-image">
-          <img src="assets/omniattend.png" alt="OmniAttend Attendance Tracker">
-          <span class="project-status-badge">
-            <span class="dot"></span>
-            Active
-          </span>
-        </div>
-        <div class="project-card-body">
-          <h3 class="project-title">OmniAttend</h3>
-          <p class="project-description">OmniAttend is a modern, responsive multi-user attendance tracking and academic regulator web application. It features dynamic Day-Wise vs. Hour-Wise attendance calculations, AI-powered routine ingestion using Google Gemini, interactive timetables, and audit logging.</p>
-          <div class="project-footer">
-            <span class="project-tech-tag">HTML5 / Vanilla CSS / AI</span>
-            <a href="https://itspratikbiswas.github.io/attendance-tracker/" class="project-link" target="_blank" rel="noopener noreferrer">
-              View Live Site
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+      <div class="hero-inner">
+        <!-- Live Status Capsule -->
+        <div class="reveal-node">
+          <div class="hero-status-capsule">
+            <span class="hero-status-dot"></span>
+            <span>Building Next-Gen Web &amp; AI Tools</span>
           </div>
         </div>
-      </article>
-    </div>
-  </section>
 
-  <!-- Development Pipeline Section -->
-  <section class="section" id="pipeline">
-    <div class="section-header">
-      <p class="section-tag">Current Pipeline</p>
-      <h2 class="section-title">Upcoming Projects</h2>
-    </div>
-
-    <div class="projects-grid">
-      <!-- Project 2: Personal Knowledge Base -->
-      <article class="project-card">
-        <div class="project-card-placeholder">
-          <div class="placeholder-icon-wrapper">
-            <svg class="placeholder-icon" viewBox="0 0 24 24">
-              <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
-              <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
-              <path d="M12 6v6l3-2" />
-            </svg>
-          </div>
-          <span class="placeholder-status-badge">
-            <span class="dot"></span>
-            In Progress
-          </span>
+        <!-- Monumental Technical Headline -->
+        <div class="reveal-node reveal-delay-1 hero-title-wrapper">
+          <h1 class="hero-title">
+            Crafting Digital Products with <span class="highlight">Intelligence &amp; Elegance</span>
+          </h1>
         </div>
-        <div class="project-card-body">
-          <h3 class="project-title">Personal Knowledge Base</h3>
-          <p class="project-description">A fast, local-first documentation system for storing developer cheatsheets, design tokens, and agent workflow scripts.</p>
-          <div class="project-footer">
-            <span class="project-tech-tag">Web Storage / Markdown</span>
-            <a href="#" class="project-link" onclick="event.preventDefault(); alert('Project coming soon!');">
-              View Live Site
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+
+        <!-- Concise Bio & Statement -->
+        <div class="reveal-node reveal-delay-2">
+          <p class="hero-subtitle">
+            Welcome to my personal workspace. I specialize in HTML5, CSS design systems, and AI-driven development. Take a look at the projects currently in development below.
+          </p>
+        </div>
+
+        <!-- Technical Telemetry Badges (3-Column Architecture) -->
+        <div class="reveal-node reveal-delay-3 hero-telemetry-grid">
+          <div class="telemetry-card">
+            <span class="telemetry-label">Availability</span>
+            <span class="telemetry-value">Active</span>
+            <span class="telemetry-subtext">Building Next-Gen Web &amp; AI</span>
+          </div>
+          <div class="telemetry-card">
+            <span class="telemetry-label">Active Stack</span>
+            <span class="telemetry-value">HTML5 / CSS3</span>
+            <span class="telemetry-subtext">Clean Architecture &amp; Systems</span>
+          </div>
+          <div class="telemetry-card">
+            <span class="telemetry-label">Methodology</span>
+            <span class="telemetry-value">Pair AI</span>
+            <span class="telemetry-subtext">AI-Driven Coding Workflow</span>
           </div>
         </div>
-      </article>
 
-      <!-- Project 3: Neural Task Automation Engine -->
-      <article class="project-card">
-        <div class="project-card-placeholder">
-          <div class="placeholder-icon-wrapper">
-            <svg class="placeholder-icon" viewBox="0 0 24 24">
-              <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
-              <line x1="8" y1="21" x2="16" y2="21"></line>
-              <line x1="12" y1="17" x2="12" y2="21"></line>
-              <polyline points="7 8 10 11 7 14"></polyline>
-              <line x1="13" y1="14" x2="17" y2="14"></line>
-            </svg>
-          </div>
-          <span class="placeholder-status-badge">
-            <span class="dot"></span>
-            In Development
-          </span>
+        <!-- Tactical CTA Links -->
+        <div class="reveal-node reveal-delay-3 hero-actions">
+          <a href="#projects" class="btn-tactical-primary">
+            <span>Explore Projects</span>
+            <span class="material-symbols-outlined">arrow_downward</span>
+          </a>
+          <a href="#about" class="btn-tactical-secondary">
+            <span>About My Journey</span>
+            <span class="material-symbols-outlined">arrow_forward</span>
+          </a>
         </div>
-        <div class="project-card-body">
-          <h3 class="project-title">Task Automation Engine</h3>
-          <p class="project-description">A smart command-line helper designed to streamline frontend builds, optimize image assets, and automate repetitive coding tasks.</p>
-          <div class="project-footer">
-            <span class="project-tech-tag">JavaScript / Node.js</span>
-            <a href="#" class="project-link" onclick="event.preventDefault(); alert('Project coming soon!');">
-              View Live Site
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
-          </div>
-        </div>
-      </article>
+      </div>
+    </section>
 
-      <!-- Project 4: Real-Time Analytics Dashboard -->
-      <article class="project-card">
-        <div class="project-card-placeholder">
-          <div class="placeholder-icon-wrapper">
-            <svg class="placeholder-icon" viewBox="0 0 24 24">
-              <line x1="18" y1="20" x2="18" y2="10"></line>
-              <line x1="12" y1="20" x2="12" y2="4"></line>
-              <line x1="6" y1="20" x2="6" y2="14"></line>
-            </svg>
+    <!-- SECTION 01: ACTIVE PROJECTS -->
+    <section class="section section-alt" id="projects">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="reveal-node section-header section-header-split">
+          <div>
+            <span class="section-index-tag">01 // Live &amp; Deployed</span>
+            <h2 class="section-title">Active Projects</h2>
           </div>
-          <span class="placeholder-status-badge">
-            <span class="dot"></span>
-            Coming Soon
-          </span>
+          <p class="section-description">
+            Production-ready digital applications engineered for high performance, modern responsiveness, and intuitive utility.
+          </p>
         </div>
-        <div class="project-card-body">
-          <h3 class="project-title">Web Performance Analytics</h3>
-          <p class="project-description">A lightweight performance monitoring dashboard tracking CSS rendering speeds, core web vitals, and user accessibility scores.</p>
-          <div class="project-footer">
-            <span class="project-tech-tag">HTML5 / Flexbox / Grid</span>
-            <a href="#" class="project-link" onclick="event.preventDefault(); alert('Project coming soon!');">
-              View Live Site
-              <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-            </a>
+
+        <!-- Projects Grid -->
+        <div class="projects-grid active-projects-grid">
+          <!-- Project 1: OmniAttend -->
+          <article class="reveal-node project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">2026 / ACADEMIC REGULATOR</span>
+                <span class="material-symbols-outlined project-arrow-icon">north_east</span>
+              </div>
+              <div class="project-card-image">
+                <img src="assets/omniattend.png" alt="OmniAttend Attendance Tracker">
+                <span class="project-status-badge">
+                  <span class="dot"></span>
+                  Active
+                </span>
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">OmniAttend</h3>
+                <p class="project-description">
+                  OmniAttend is a modern, responsive multi-user attendance tracking and academic regulator web application. It features dynamic Day-Wise vs. Hour-Wise attendance calculations, AI-powered routine ingestion using Google Gemini, interactive timetables, and audit logging.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="project-tech-tag">HTML5</span>
+                  <span class="project-tech-tag">Vanilla CSS</span>
+                  <span class="project-tech-tag">AI Integration</span>
+                  <span class="project-tech-tag">Gemini API</span>
+                </div>
+              </div>
+            </div>
+            <!-- Micro Architecture / Metric Window -->
+            <div class="project-card-telemetry">
+              <span class="project-telemetry-status">
+                <span class="indicator"></span>
+                STATUS: DEPLOYED &amp; LIVE
+              </span>
+              <a href="https://itspratikbiswas.github.io/attendance-tracker/" class="project-link" target="_blank" rel="noopener noreferrer">
+                View Live Site
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 02: DEVELOPMENT PIPELINE -->
+    <section class="section" id="pipeline">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="reveal-node section-header section-header-split">
+          <div>
+            <span class="section-index-tag">02 // Current Pipeline</span>
+            <h2 class="section-title">Upcoming Projects</h2>
+          </div>
+          <p class="section-description">
+            Research and architecture prototypes currently progressing through specification, design tokens, and iterative development.
+          </p>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Project 2: Personal Knowledge Base -->
+          <article class="reveal-node project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">2026 / DOCUMENTATION</span>
+                <span class="material-symbols-outlined project-arrow-icon">north_east</span>
+              </div>
+              <div class="project-card-placeholder">
+                <div class="placeholder-grid-pattern"></div>
+                <div class="placeholder-terminal-bar">
+                  <span class="placeholder-terminal-file">spec://kb-markdown.md</span>
+                  <span class="placeholder-status-badge">
+                    <span class="dot"></span>
+                    In Progress
+                  </span>
+                </div>
+                <div class="placeholder-center-icon">
+                  <svg class="placeholder-icon" viewBox="0 0 24 24">
+                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                    <path d="M12 6v6l3-2" />
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">Personal Knowledge Base</h3>
+                <p class="project-description">
+                  A fast, local-first documentation system for storing developer cheatsheets, design tokens, and agent workflow scripts.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="project-tech-tag">Web Storage</span>
+                  <span class="project-tech-tag">Markdown</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-telemetry">
+              <span class="project-telemetry-status">
+                <span class="indicator"></span>
+                STAGE: LOCAL STORAGE CORE
+              </span>
+              <a href="#" class="project-link" onclick="event.preventDefault(); alert('Project coming soon!');">
+                View Live Site
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 3: Neural Task Automation Engine -->
+          <article class="reveal-node reveal-delay-1 project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">2026 / CLI INFRASTRUCTURE</span>
+                <span class="material-symbols-outlined project-arrow-icon">north_east</span>
+              </div>
+              <div class="project-card-placeholder">
+                <div class="placeholder-grid-pattern"></div>
+                <div class="placeholder-terminal-bar">
+                  <span class="placeholder-terminal-file">cli://task-engine.js</span>
+                  <span class="placeholder-status-badge">
+                    <span class="dot"></span>
+                    In Development
+                  </span>
+                </div>
+                <div class="placeholder-center-icon">
+                  <svg class="placeholder-icon" viewBox="0 0 24 24">
+                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                    <polyline points="7 8 10 11 7 14"></polyline>
+                    <line x1="13" y1="14" x2="17" y2="14"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">Task Automation Engine</h3>
+                <p class="project-description">
+                  A smart command-line helper designed to streamline frontend builds, optimize image assets, and automate repetitive coding tasks.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="project-tech-tag">JavaScript</span>
+                  <span class="project-tech-tag">Node.js</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-telemetry">
+              <span class="project-telemetry-status">
+                <span class="indicator"></span>
+                STAGE: BUILD PIPELINES
+              </span>
+              <a href="#" class="project-link" onclick="event.preventDefault(); alert('Project coming soon!');">
+                View Live Site
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+
+          <!-- Project 4: Real-Time Analytics Dashboard -->
+          <article class="reveal-node reveal-delay-2 project-card">
+            <div>
+              <div class="project-card-header">
+                <span class="project-category-tag">2026 / METRICS &amp; VITALS</span>
+                <span class="material-symbols-outlined project-arrow-icon">north_east</span>
+              </div>
+              <div class="project-card-placeholder">
+                <div class="placeholder-grid-pattern"></div>
+                <div class="placeholder-terminal-bar">
+                  <span class="placeholder-terminal-file">telemetry://analytics.css</span>
+                  <span class="placeholder-status-badge">
+                    <span class="dot"></span>
+                    Coming Soon
+                  </span>
+                </div>
+                <div class="placeholder-center-icon">
+                  <svg class="placeholder-icon" viewBox="0 0 24 24">
+                    <line x1="18" y1="20" x2="18" y2="10"></line>
+                    <line x1="12" y1="20" x2="12" y2="4"></line>
+                    <line x1="6" y1="20" x2="6" y2="14"></line>
+                  </svg>
+                </div>
+              </div>
+              <div class="project-card-body">
+                <h3 class="project-title">Web Performance Analytics</h3>
+                <p class="project-description">
+                  A lightweight performance monitoring dashboard tracking CSS rendering speeds, core web vitals, and user accessibility scores.
+                </p>
+                <div class="project-tech-tags">
+                  <span class="project-tech-tag">HTML5</span>
+                  <span class="project-tech-tag">Flexbox / Grid</span>
+                </div>
+              </div>
+            </div>
+            <div class="project-card-telemetry">
+              <span class="project-telemetry-status">
+                <span class="indicator"></span>
+                STAGE: VITALS PROFILING
+              </span>
+              <a href="#" class="project-link" onclick="event.preventDefault(); alert('Project coming soon!');">
+                View Live Site
+                <svg viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 03: ABOUT & BIO -->
+    <section class="section section-alt" id="about">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="reveal-node section-header">
+          <span class="section-index-tag">03 // Background</span>
+          <h2 class="section-title">About Me</h2>
+        </div>
+
+        <div class="reveal-node about-grid">
+          <!-- Column 1: Profile Image -->
+          <div class="about-image-wrapper">
+            <div class="about-image-frame">
+              <img src="assets/pfp1.jpg" alt="Pratik Profile Picture">
+            </div>
+          </div>
+
+          <!-- Column 2: Bio Text -->
+          <div class="about-content">
+            <span class="about-subtag">01 / Overview</span>
+            <h3 class="about-title">Hi, I'm Pratik</h3>
+            <p>
+              I am a passionate web developer focused on mastering modern HTML5, clean CSS architecture, and AI-driven development tools. I love creating slick, high-contrast user experiences with minimal friction and maximum aesthetic impact.
+            </p>
+            <p>
+              Currently, I am exploring pair-programming workflow automation, building robust component libraries, and designing dark-mode visual interfaces that blend high performance with warm, premium accent styling.
+            </p>
+
+            <div class="skills-list">
+              <span class="skill-tag">HTML5</span>
+              <span class="skill-tag">CSS3 / Flexbox &amp; Grid</span>
+              <span class="skill-tag">Vanilla JavaScript</span>
+              <span class="skill-tag">AI-Driven Coding</span>
+              <span class="skill-tag">Responsive UI/UX</span>
+            </div>
           </div>
         </div>
-      </article>
-    </div>
-  </section>
+      </div>
+    </section>
 
-  <!-- About & Bio Section (Two Columns) -->
-  <section class="section" id="about">
-    <div class="section-header">
-      <p class="section-tag">Background</p>
-      <h2 class="section-title">About Me</h2>
-    </div>
+    <!-- SECTION 04: LIFESTYLE GALLERY -->
+    <section class="section" id="gallery">
+      <div class="section-container">
+        <!-- Section Header -->
+        <div class="reveal-node section-header">
+          <span class="section-index-tag">04 // Brand &amp; Lifestyle</span>
+          <h2 class="section-title">Behind the Code</h2>
+        </div>
 
-    <div class="about-grid">
-      <!-- Column 1: Profile Image with Warm-Tone Border -->
-      <div class="about-image-wrapper">
-        <div class="about-image-frame">
-          <img src="assets/pfp1.jpg" alt="Pratik Profile Picture">
+        <div class="gallery-grid">
+          <div class="reveal-node gallery-card">
+            <img src="assets/pfp1.jpg" alt="Workspace Setup">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Focused Workspace</h4>
+              <span class="gallery-caption">Minimalist Desk &amp; Dark Mode Setup</span>
+            </div>
+          </div>
+          <div class="reveal-node reveal-delay-1 gallery-card">
+            <img src="assets/pfp1.jpg" alt="Coding Session">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Creative Coding</h4>
+              <span class="gallery-caption">Deep Work &amp; AI Pair Programming</span>
+            </div>
+          </div>
+          <div class="reveal-node reveal-delay-2 gallery-card">
+            <img src="assets/pfp1.jpg" alt="Design Exploration">
+            <div class="gallery-overlay">
+              <h4 class="gallery-title">Visual Systems</h4>
+              <span class="gallery-caption">Color Palettes &amp; Typography</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 05: CONTACT & COLLABORATION -->
+    <section class="section" id="contact">
+      <div class="section-container">
+        <div class="reveal-node contact-card">
+          <div class="contact-card-glow"></div>
+          <div class="contact-card-glow-left"></div>
+          <div class="contact-content">
+            <span class="contact-tag">05 // Direct Inquiries</span>
+            <h2 class="contact-title">
+              Interested in collaborating or discussing AI web development?
+            </h2>
+            <p class="contact-text">
+              Feel free to reach out across my channels.
+            </p>
+
+            <div class="contact-actions">
+              <a href="mailto:biswaspratik14@gmail.com" class="contact-primary-btn">
+                <span class="material-symbols-outlined">mail</span>
+                <span>biswaspratik14@gmail.com</span>
+              </a>
+              <button class="contact-secondary-btn" id="copy-email-btn" onclick="copyContactEmail()">
+                <span class="material-symbols-outlined">content_copy</span>
+                <span id="copy-label">Copy Email</span>
+              </button>
+            </div>
+
+            <div class="social-links">
+              <!-- Email -->
+              <a href="mailto:biswaspratik14@gmail.com" class="social-tag-link" title="Email Me">
+                <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V8.38l8 5 8-5V17c0 .55-.45 1-1 1zm-7-6.25L4.57 7h14.86L12 11.75z"/></svg>
+                <span>Email</span>
+              </a>
+              <!-- GitHub -->
+              <a href="https://github.com/itspratikbiswas" target="_blank" rel="noopener noreferrer" class="social-tag-link" title="GitHub">
+                <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                <span>GitHub</span>
+              </a>
+              <!-- LinkedIn -->
+              <a href="https://www.linkedin.com/in/pratik-biswas-b529922b6/" target="_blank" rel="noopener noreferrer" class="social-tag-link" title="LinkedIn">
+                <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                <span>LinkedIn</span>
+              </a>
+              <!-- Instagram -->
+              <a href="https://instagram.com/its.pratik.biswas" target="_blank" rel="noopener noreferrer" class="social-tag-link" title="Instagram">
+                <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
+                <span>Instagram</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Architectural Monolith Footer -->
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-top-grid">
+        <div class="footer-col-brand">
+          <div class="footer-brand-title">PRATIK.DEV <span>//</span> AI-DRIVEN DEVELOPMENT</div>
+          <div class="footer-brand-desc">&copy; 2026 Pratik. Built with architectural discipline.</div>
+        </div>
+
+        <div class="footer-col-status">
+          <span class="material-symbols-outlined" style="font-size: 16px; color: var(--outline);">schedule</span>
+          <span>LOCAL: UTC+5:30 [ACTIVE]</span>
+        </div>
+
+        <div class="footer-col-nav">
+          <a href="https://github.com/itspratikbiswas" target="_blank" rel="noopener noreferrer">GITHUB</a>
+          <span class="slash">/</span>
+          <a href="https://www.linkedin.com/in/pratik-biswas-b529922b6/" target="_blank" rel="noopener noreferrer">LINKEDIN</a>
+          <span class="slash">/</span>
+          <a href="https://instagram.com/its.pratik.biswas" target="_blank" rel="noopener noreferrer">INSTAGRAM</a>
+          <span class="slash">/</span>
+          <a href="mailto:biswaspratik14@gmail.com">EMAIL</a>
         </div>
       </div>
 
-      <!-- Column 2: Bio Text -->
-      <div class="about-content">
-        <h3>Hi, I'm Pratik</h3>
-        <p>I am a passionate web developer focused on mastering modern HTML5, clean CSS architecture, and AI-driven development tools. I love creating slick, high-contrast user experiences with minimal friction and maximum aesthetic impact.</p>
-        <p>Currently, I am exploring pair-programming workflow automation, building robust component libraries, and designing dark-mode visual interfaces that blend high performance with warm, premium accent styling.</p>
-
-        <div class="skills-list">
-          <span class="skill-tag">HTML5</span>
-          <span class="skill-tag">CSS3 / Flexbox & Grid</span>
-          <span class="skill-tag">Vanilla JavaScript</span>
-          <span class="skill-tag">AI-Driven Coding</span>
-          <span class="skill-tag">Responsive UI/UX</span>
+      <div class="footer-bottom-bar">
+        <div class="footer-telemetry">
+          <span class="dot"></span>
+          <span>LATENCY: 14MS</span>
+          <span style="color: var(--outline-variant);">|</span>
+          <span>EDGE NODE: HYD1</span>
         </div>
+        <button class="footer-back-to-top" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">
+          <span class="material-symbols-outlined">arrow_upward</span>
+          <span>Back to top</span>
+        </button>
       </div>
-    </div>
-  </section>
-
-  <!-- Lifestyle Gallery Section -->
-  <section class="section" id="gallery">
-    <div class="section-header">
-      <p class="section-tag">Brand & Lifestyle</p>
-      <h2 class="section-title">Behind the Code</h2>
-    </div>
-
-    <div class="gallery-grid">
-      <div class="gallery-card">
-        <img src="assets/pfp1.jpg" alt="Workspace Setup">
-        <div class="gallery-overlay">
-          <h4 class="gallery-title">Focused Workspace</h4>
-          <span class="gallery-caption">Minimalist Desk & Dark Mode Setup</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="assets/pfp1.jpg" alt="Coding Session">
-        <div class="gallery-overlay">
-          <h4 class="gallery-title">Creative Coding</h4>
-          <span class="gallery-caption">Deep Work & AI Pair Programming</span>
-        </div>
-      </div>
-      <div class="gallery-card">
-        <img src="assets/pfp1.jpg" alt="Design Exploration">
-        <div class="gallery-overlay">
-          <h4 class="gallery-title">Visual Systems</h4>
-          <span class="gallery-caption">Color Palettes & Typography</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Minimalist Footer -->
-  <footer class="footer" id="contact">
-    <div class="footer-content">
-      <div class="footer-logo">PRATIK<span>.</span></div>
-      <p class="footer-text">Interested in collaborating or discussing AI web development? Feel free to reach out across my channels.</p>
-      
-      <div class="social-links">
-        <!-- Email Icon -->
-        <a href="mailto:biswaspratik14@gmail.com" class="social-icon-btn" title="Email Me">
-          <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm-1 14H5c-.55 0-1-.45-1-1V8.38l8 5 8-5V17c0 .55-.45 1-1 1zm-7-6.25L4.57 7h14.86L12 11.75z"/></svg>
-        </a>
-        <!-- GitHub Icon -->
-        <a href="https://github.com/itspratikbiswas" target="_blank" class="social-icon-btn" title="GitHub">
-          <svg viewBox="0 0 24 24"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
-        </a>
-        <!-- LinkedIn Icon -->
-        <a href="https://www.linkedin.com/in/pratik-biswas-b529922b6/" target="_blank" class="social-icon-btn" title="LinkedIn">
-          <svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
-        </a>
-        <!-- Instagram Icon -->
-        <a href="https://instagram.com/its.pratik.biswas" target="_blank" class="social-icon-btn" title="Instagram">
-          <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.051.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/></svg>
-        </a>
-      </div>
-
-      <p class="copyright">&copy; 2026 Pratik. Designed with pitch-black theme & warm beige accents.</p>
     </div>
   </footer>
+
+  <!-- Swiss Minimal Reveal & Interaction JavaScript -->
+  <script>
+    (function () {
+      // Intersection Observer for Swiss minimal reveal
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, {
+        threshold: 0.02,
+        rootMargin: '0px 0px 60px 0px'
+      });
+
+      document.querySelectorAll('.reveal-node').forEach(node => {
+        observer.observe(node);
+      });
+
+      // Active Navigation highlighting on scroll
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.nav-links a');
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        sections.forEach(section => {
+          const sectionTop = section.offsetTop - 120;
+          if (window.scrollY >= sectionTop) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        navLinks.forEach(link => {
+          link.classList.remove('active');
+          if (link.getAttribute('href') === `#${current}`) {
+            link.classList.add('active');
+          }
+        });
+      }, { passive: true });
+    })();
+
+    function copyContactEmail() {
+      const email = "biswaspratik14@gmail.com";
+      navigator.clipboard.writeText(email).then(() => {
+        const label = document.getElementById('copy-label');
+        if (label) {
+          const original = label.innerText;
+          label.innerText = "COPIED!";
+          setTimeout(() => {
+            label.innerText = original;
+          }, 2000);
+        }
+      });
+    }
+  </script>
 
 </body>
 </html>
